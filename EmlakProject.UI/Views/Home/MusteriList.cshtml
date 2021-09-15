@@ -1,0 +1,90 @@
+﻿@model IEnumerable<EmlakProject.Entities.Musteri>
+
+@{
+    ViewData["Title"] = "MusteriList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>MusteriList</h1>
+
+<p>
+    @Html.ActionLink("Müşteri Ekleme Sayfasına Git", "AddMusteri")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Soyad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EvTel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CepTel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                Emlakçı
+            </th>
+
+            <th>Emlak Ara</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Soyad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EvTel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CepTel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Emlakci.EmlakciAdi)
+                </td>
+
+                <td>
+                    <a href="/Home/GetEmlakciID?emlakciId=@item.EmlakciId" class="btn btn-success">Emlak Ara</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts{
+
+    <script>
+       
+        $(".btnEmlakAra").click(function () {
+            var emlakciId = $(this).attr("dataID");
+            $.ajax({
+                url: "/Home/GetEmlakciID/" + emlakciId,
+                type: "GET",
+                success: function (resp) {
+                    if (resp != null) {
+                        console.log("resp",resp)
+                    }
+                },
+                onerror: function (err) {
+                    alert("Hata Oluştu.")
+                    console.log(err);
+                }
+            })
+        })
+    </script>
+}

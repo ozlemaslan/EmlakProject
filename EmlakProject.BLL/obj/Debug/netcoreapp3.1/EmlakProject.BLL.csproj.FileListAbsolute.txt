@@ -1,0 +1,16 @@
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\bin\Debug\netcoreapp3.1\EmlakProject.BLL.deps.json
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\bin\Debug\netcoreapp3.1\EmlakProject.BLL.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\bin\Debug\netcoreapp3.1\EmlakProject.Core.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\bin\Debug\netcoreapp3.1\EmlakProject.DAL.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\bin\Debug\netcoreapp3.1\EmlakProject.Entities.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\bin\Debug\netcoreapp3.1\EmlakProject.DAL.pdb
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\bin\Debug\netcoreapp3.1\EmlakProject.Entities.pdb
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\bin\Debug\netcoreapp3.1\EmlakProject.Core.pdb
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\obj\Debug\netcoreapp3.1\EmlakProject.BLL.csprojAssemblyReference.cache
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\obj\Debug\netcoreapp3.1\EmlakProject.BLL.AssemblyInfoInputs.cache
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\obj\Debug\netcoreapp3.1\EmlakProject.BLL.AssemblyInfo.cs
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\obj\Debug\netcoreapp3.1\EmlakProject.BLL.csproj.CopyComplete
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\bin\Debug\netcoreapp3.1\EmlakProject.BLL.pdb
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\obj\Debug\netcoreapp3.1\EmlakProject.BLL.csproj.CoreCompileInputs.cache
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\obj\Debug\netcoreapp3.1\EmlakProject.BLL.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.BLL\obj\Debug\netcoreapp3.1\EmlakProject.BLL.pdb

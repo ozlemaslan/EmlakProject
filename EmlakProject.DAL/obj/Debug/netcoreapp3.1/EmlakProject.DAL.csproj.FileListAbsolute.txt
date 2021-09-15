@@ -1,0 +1,17 @@
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\bin\Debug\netcoreapp3.1\EmlakProject.DAL.deps.json
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\bin\Debug\netcoreapp3.1\EmlakProject.DAL.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\obj\Debug\netcoreapp3.1\EmlakProject.DAL.csprojAssemblyReference.cache
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\obj\Debug\netcoreapp3.1\EmlakProject.DAL.AssemblyInfoInputs.cache
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\obj\Debug\netcoreapp3.1\EmlakProject.DAL.AssemblyInfo.cs
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\bin\Debug\netcoreapp3.1\EmlakProject.Core.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\bin\Debug\netcoreapp3.1\EmlakProject.Entities.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\bin\Debug\netcoreapp3.1\EmlakProject.DAL.runtimeconfig.json
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\bin\Debug\netcoreapp3.1\EmlakProject.DAL.runtimeconfig.dev.json
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\bin\Debug\netcoreapp3.1\EmlakProject.DAL.pdb
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\bin\Debug\netcoreapp3.1\EmlakProject.Core.pdb
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\bin\Debug\netcoreapp3.1\EmlakProject.Entities.pdb
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\obj\Debug\netcoreapp3.1\EmlakProject.DAL.csproj.CopyComplete
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\obj\Debug\netcoreapp3.1\EmlakProject.DAL.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\obj\Debug\netcoreapp3.1\EmlakProject.DAL.pdb
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\obj\Debug\netcoreapp3.1\EmlakProject.DAL.genruntimeconfig.cache
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.DAL\obj\Debug\netcoreapp3.1\EmlakProject.DAL.csproj.CoreCompileInputs.cache

@@ -1,0 +1,106 @@
+﻿@model IEnumerable<EmlakProject.Entities.Emlakci>
+
+@{
+    ViewData["Title"] = "EmlakciList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>EmlakciList</h1>
+
+<p>
+    @Html.ActionLink("Emlakçı Ekleme Sayfasına Git", "AddEmlakci")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Emlakçı Adı
+            </th>
+            <th>
+                Yetkili Ad Soyad
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fax)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmlakciAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.YetkiliAdSoyad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adres)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fax)
+                </td>
+
+                
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@section scripts{
+
+    <script>
+        $("#btnUpdateChange").click(function () {
+            var categoryID = $(this).attr("dataID");
+            var category = {
+                "CategoryName": $("#categoryName").val(),
+                "Description": $("#categoryDescription").val(),
+                "CategoryID": categoryID,
+            }
+            $.ajax({
+                url: "/AdminProcess/UpdateCategory/",
+                type: "POST",
+                data: category,
+                success: function (resp) {
+                    if (resp == "ok") {
+                        alert("Güncelleme Başarılı")
+                        window.location.reload();
+                    }
+                },
+                onerror: function (err) {
+                    alert("İstek başarısız.")
+                    console.log(err);
+                }
+            })
+        })
+        $(".btnUpdate").click(function () {
+            var categoryID = $(this).attr("dataID");
+            $.ajax({
+                url: "/Home/GetCategory/" + categoryID,
+                type: "POST",
+                success: function (resp) {
+                    if (resp != null) {
+                        $("#categoryName").val(resp.CategoryName);
+                        $("#categoryDescription").val(resp.Description);
+                        $("#btnUpdateChange").attr("dataID", categoryID);
+                    }
+                },
+                onerror: function (err) {
+                    alert("Hata Oluştu.")
+                    console.log(err);
+                }
+            })
+        })
+    </script>
+}

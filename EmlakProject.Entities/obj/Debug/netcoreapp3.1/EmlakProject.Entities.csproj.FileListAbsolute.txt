@@ -1,0 +1,12 @@
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\bin\Debug\netcoreapp3.1\EmlakProject.Entities.deps.json
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\bin\Debug\netcoreapp3.1\EmlakProject.Entities.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\bin\Debug\netcoreapp3.1\EmlakProject.Entities.pdb
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\bin\Debug\netcoreapp3.1\EmlakProject.Core.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\bin\Debug\netcoreapp3.1\EmlakProject.Core.pdb
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\obj\Debug\netcoreapp3.1\EmlakProject.Entities.csprojAssemblyReference.cache
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\obj\Debug\netcoreapp3.1\EmlakProject.Entities.AssemblyInfoInputs.cache
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\obj\Debug\netcoreapp3.1\EmlakProject.Entities.AssemblyInfo.cs
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\obj\Debug\netcoreapp3.1\EmlakProject.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\obj\Debug\netcoreapp3.1\EmlakProject.Entities.csproj.CopyComplete
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\obj\Debug\netcoreapp3.1\EmlakProject.Entities.dll
+C:\Users\ozlem\source\repos\Emlak\EmlakProject\EmlakProject.Entities\obj\Debug\netcoreapp3.1\EmlakProject.Entities.pdb

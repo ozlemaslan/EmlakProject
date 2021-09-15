@@ -1,0 +1,110 @@
+﻿@model IEnumerable<EmlakProject.Entities.EmlakBilgisi>
+
+@{
+    ViewData["Title"] = "GetEmlakciID";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Emlak Ara</h1>
+@using (Html.BeginForm("GetEmlakciID", "Home", FormMethod.Post))
+{
+    @if (ViewBag.CountZero != null)
+    {
+        <p style="margin-left:15px;color:red">@ViewBag.CountZero</p>
+    }
+
+    <div class="row" style="margin-left:15px;">
+
+
+        <div class="col-md-3">
+
+            <input class="metrekare" name="metrekare" placeholder="Metrekare girin " required />*
+        </div>
+        <div class="col-md-3">
+
+            <input type="number" class="oda" name="oda" placeholder="Oda sayısı girin " required />*
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-success btnAra" name="btnAra" style="width:50px;height:40px;">Ara</button>
+        </div>
+        <div class="col-md-3">
+            @Html.ActionLink("İndir", "DownloadExcel", new { })
+        </div>
+    </div>
+    <br />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmlakTuru)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MetreKare)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.OdaSayisi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Kat)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BinaKati)
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmlakTuru)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MetreKare)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OdaSayisi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BinaKati)
+                    </td>
+
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@section scripts{
+
+    <script>
+
+        $(".btnAra").click(function () {
+            var deger = {
+                "OdaSayisi": $(".oda").val(),
+                "MetreKare": $(".metrekare").val
+            }
+            $.ajax({
+                url: "/Home/GetEmlakciID/",
+                type: "POST",
+                data: deger,
+                success: function (resp) {
+                    if (resp != null) {
+                        console.log("resp", resp)
+                    }
+                },
+                onerror: function (err) {
+                    alert("Hata Oluştu.")
+                    console.log(err);
+                }
+            })
+        })
+    </script>
+}

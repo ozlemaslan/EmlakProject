@@ -1,0 +1,63 @@
+﻿@model EmlakProject.Entities.Musteri
+
+@{
+    ViewData["Title"] = "AddMusteri";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Müşteri Ekle</h1>
+
+<hr />
+<div class="row" style="margin-left:30px;" >
+    <div class="col-md-6">
+        <form asp-action="AddMusteri">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<div class="form-group">
+                <label asp-for="EmlakciId" class="control-label"></label>
+                <select asp-for="EmlakciId" class ="form-control" asp-items="ViewBag.EmlakciId"></select>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Ad" class="control-label"></label>
+                <input asp-for="Ad" class="form-control" required/>
+                <span asp-validation-for="Ad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Soyad" class="control-label"></label>
+                <input asp-for="Soyad" class="form-control" required/>
+                <span asp-validation-for="Soyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Emlakci.EmlakciAdi, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(a => a.EmlakciId, (IEnumerable<SelectListItem>)ViewBag.Emlakcilar, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.EmlakciId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="EvTel" class="control-label"></label>
+                <input asp-for="EvTel" class="form-control" required/>
+                <span asp-validation-for="EvTel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CepTel" class="control-label"></label>
+                <input asp-for="CepTel" class="form-control" required/>
+                <span asp-validation-for="CepTel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" type="email" required />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+          
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

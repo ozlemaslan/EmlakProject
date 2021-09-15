@@ -1,0 +1,55 @@
+﻿@model EmlakProject.Entities.Emlakci
+
+@{
+    ViewData["Title"] = "AddEmlakci";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Emlakçı Ekle</h1>
+
+<hr />
+<div class="row" style="margin-left:30px;">
+    <div class="col-md-4">
+        <form asp-action="AddEmlakci">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EmlakciAdi" class="control-label"></label>
+                <input asp-for="EmlakciAdi" class="form-control" />
+                <span asp-validation-for="EmlakciAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YetkiliAdSoyad" class="control-label"></label>
+                <input asp-for="YetkiliAdSoyad" class="form-control" />
+                <span asp-validation-for="YetkiliAdSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Adres" class="control-label"></label>
+                <input asp-for="Adres" class="form-control" />
+                <span asp-validation-for="Adres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefon" class="control-label"></label>
+                <input asp-for="Telefon" class="form-control" />
+                <span asp-validation-for="Telefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fax" class="control-label"></label>
+                <input asp-for="Fax" class="form-control" />
+                <span asp-validation-for="Fax" class="text-danger"></span>
+            </div>
+            
+           
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a href="/Home/EmlakciList">Emlakçı Listesine Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
